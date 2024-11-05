@@ -1,0 +1,47 @@
+/* src/styles/App.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #EA3680, #000000);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: stretch; /* Allow items to stretch across the width */
+  -webkit-font-smoothing: antialiased;
+}
+
+.App {
+  text-align: center;
+  flex: 1; /* Allow the App to grow and fill available space */
+  padding: 20px; /* Add some padding for aesthetics */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading Prompt */
+.loading-prompt {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+} 

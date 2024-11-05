@@ -1,0 +1,49 @@
+/* src/styles/Header.css */
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0; /* Increased vertical padding for a more spacious look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better visibility */
+    width: 100%; /* Ensure header takes full width */
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Positions it at the very top of the viewport */
+    left: 0; /* Aligns it to the left edge */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.navbar-container {
+    max-width: 1200px; /* Keeps content centered */
+    margin: 0 auto; /* Center the navbar container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; /* Adds padding for better spacing */
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #EA3680;
+}
+
+/* Optional: Add a small margin to the body to avoid overlap with fixed header */
+body {
+    margin-top: 80px; /* Adjust this value based on header height */
+}
